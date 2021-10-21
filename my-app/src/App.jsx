@@ -5,17 +5,17 @@ import FieldAnimal from "./Components/FieldAnimal";
 function App() {
 
     const [field, setField] = useState([]);
-    const [fieldNamber, setFieldNamber] = useState(1);
+    const [fieldNr, setFieldNr] = useState(1);
 
     const add = (what) => {
         const fieldCopy = field.slice();
-        fieldCopy.push({ animal: what, field: parseInt(fieldNamber) });
+        fieldCopy.push({ animal: what, field: parseInt(fieldNr)});
         setField(fieldCopy);
         console.log(fieldCopy);
     }
 
     const selectField = e => {
-        setFieldNamber(e.target.value);
+        setFieldNr(e.target.value);
     }
 
     return (
@@ -32,7 +32,7 @@ function App() {
             <button onClick={() => add('cow')}>Add cow</button>
             <button onClick={() => add('sheep')}>Add sheep</button>
             <button onClick={() => add('horse')}>Add horse</button>
-            <select value={fieldNamber} onChange={selectField}>
+            <select value={fieldNr} onChange={selectField}>
                 <option value={1}>First Field</option>
                 <option value={2}>Second Field</option>
             </select>

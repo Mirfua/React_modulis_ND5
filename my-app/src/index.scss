@@ -19,7 +19,7 @@ body {
   justify-content: flex-start;
   align-items: flex-start;
   &__part {
-      background-color: lightgreen;
+      background-color: rgb(20, 95, 20);
       margin: 20px;
       display: flex;
       justify-content: flex-start;
@@ -33,19 +33,19 @@ body {
           height: 140px;
           width: 140px;
           border-radius: 50%;
-          border: 4px dotted deeppink;
+          border: 4px dotted rgb(213, 43, 43);
           margin: 10px;
       }
       .sheep {
           height: 140px;
           width: 140px;
-          border: 4px dotted darkturquoise;
+          border: 4px dotted rgb(251, 251, 251);
           margin: 10px;
       }
       .horse {
           height: 100px;
           width: 100px;
-          border: 4px dotted darkorchid;
+          border: 4px dotted rgb(54, 52, 54);
           margin: 30px;
           transform: rotate(45deg);
       }
